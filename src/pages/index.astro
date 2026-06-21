@@ -46,12 +46,12 @@ const projects = (await getCollection('work'))
 							<Pill>
 								<Icon icon="code" size="1.33em" />
 								<a
-									href="https://fr.wikipedia.org/wiki/Work_in_progress"
+									href="https://drive.google.com/file/d/1TmTUmGYnDo5_zmpQLdt7f-bOg2CMYHYk/view?usp=sharing"
 									target="_blank"
 									rel="noopener noreferrer"
 									class="pill-link"
 								>
-									CV (wip)
+									CV
 								</a>
 							</Pill>
 						</div>
@@ -62,7 +62,7 @@ const projects = (await getCollection('work'))
 			<Skills />
 		</div>
 
-		<main class="wrapper stack gap-20 lg:gap-48">
+		<main id="projects" class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Mes projets</h3>
@@ -124,6 +124,14 @@ const projects = (await getCollection('work'))
 </BaseLayout>
 
 <style>
+	html {
+		scroll-behavior: smooth;
+	}
+
+	#projects {
+		scroll-margin-top: 4rem;
+	}
+
 	body {
 		background: var(--gray-999);
 		color: var(--gray-300);
